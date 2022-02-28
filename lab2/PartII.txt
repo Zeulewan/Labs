@@ -1,0 +1,9 @@
+I. 
+ scanf prompts the user to input a value which then corresponds to a variable. 
+ printf can then display that variable to the user.
+
+II.
+ "int is used to store 32 bit two's complement integer while double is used 
+ to store 64 bit double precision floating point value". An int can be a whole
+ number and double can be a decimal.
+

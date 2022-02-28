@@ -1,0 +1,23 @@
+Excersise #3
+7
+
+Excersise #6
+1. No difference at all
+
+2. 0
+
+3. No
+
+4. No
+
+5. One is double and the other is long double
+
+6. Nothing
+
+7. No
+
+8. int main() can be called with any number of arguments, but int main(void) can only be called without any argument
+
+9. The printf() function will insert the corresponding ASCII character
+
+10. No

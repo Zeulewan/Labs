@@ -1,0 +1,2 @@
+i. the = sign assigns a certain value to a variable where the == sign checks if a variable equals a certain value
+"if (x=0)" is always false becasue 0 represents false. If it is "if (x=1)" is it true becuase 1 represents true

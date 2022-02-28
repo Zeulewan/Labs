@@ -1,0 +1,5 @@
+i. Becasue the average is a decimal value so you would have to put .0 after each number to make it a double then do the calculation.
+
+ii.
+"% will give you the remainder of a division"
+/ gives you the actual division assuming you are using double or float numbers
