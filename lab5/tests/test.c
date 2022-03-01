@@ -5,7 +5,7 @@ int main ()
 
     for(int i=0; i<10;i++)
     {
-        printf("i love u ");
+        printf("hi ");
     }
 //this does nothing
     return 0;
