@@ -1,14 +1,24 @@
 #include <stdio.h>
 
 int main() 
-{
-  int i = 0;
-  int a = 0.0;
-  while(i<10)
+{  
+  
+  int b_num;
+  int num_samples;
+  int num_orgs_per_100;
+
+  printf("enter &b_num, &num_samples ,num_orgs_per_100");
+  scanf("%d %d %d",&b_num, &num_samples ,&num_orgs_per_100);
+
+
+  for(int i=0; i<num_samples;i++)
   {
-    scanf("\n%d\n",&a);
-    printf("%d",a);
-    i++
+    i
+    printf("enter sample number\n");
+    scanf ()
+      
+    
+
   }
 
 
