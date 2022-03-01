@@ -13,9 +13,9 @@ int main()
 
   for(int i=0; i<num_samples;i++)
   {
-    i
+    int sn;
     printf("enter sample number\n");
-    scanf ()
+    scanf ("%d",&sn);
       
     
 
