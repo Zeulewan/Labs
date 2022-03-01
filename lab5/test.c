@@ -7,8 +7,6 @@ int main ()
     {
         printf("i love u ");
     }
-
-
-
+//this does nothing
     return 0;
 }
