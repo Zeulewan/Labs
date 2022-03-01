@@ -17,10 +17,8 @@ int main()
     printf("enter sample number then click enter\n");
     scanf ("%d",&num_orgs_per_100);
       
-    
-
   }
-
+//file input output
 
   return 0;
 }
