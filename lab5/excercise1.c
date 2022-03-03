@@ -14,11 +14,9 @@ int main()
         total_samples = 0;
         average = 0;
 
-        for (int i=1; i<=num_samples; i++)
-        {
+        for (int i=1; i<=num_samples; i++){
             fscanf (file, "%d", &num_orgs_per_100);
             total_samples = total_samples + num_orgs_per_100;
-    
         }
 
         printf ("Beach number: %d ",b_num);

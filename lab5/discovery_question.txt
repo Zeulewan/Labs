@@ -1,0 +1,8 @@
+"if (x > 0)" checks if x is greater than 0 once then runs whatever
+comes after it if it returns true, if it returns false it skipps what
+comes next.
+
+"while (x > 0)" checks if x is greater than 0 then runs whatever
+comes after if it returns true, if it returns false it skipps what
+comes next. If it returned true it then checks again if x is greater 
+than 0. It will keep repeating this process as long as x is greater than 0.
