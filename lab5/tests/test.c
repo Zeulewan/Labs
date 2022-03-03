@@ -1,15 +1,12 @@
 #include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
+
 
 int main ()
 {
-  FILE *fileName;
-  char ch[100];
-  fileName = fopen("hi.txt", "r");
-  printf("%s", fgets(ch,50,fileName));
-  fclose(fileName);
+  int a;
+  a = 10;
+  printf("wow that cool %d",a , "hi");
   
-  
+  // doesnt work
     return 0;
 }
