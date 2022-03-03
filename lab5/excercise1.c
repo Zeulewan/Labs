@@ -4,16 +4,17 @@ int main()
 {  
     FILE *file;
     file = fopen ("data5.txt", "r");
-    int b_num, num_samples, num_orgs_per_100, total_samples, average;
+    int b_num, num_samples, num_orgs_per_100, total_samples, average, num_of_beaches=0, num_open=0, num_closed=0;
 
     while (!(feof (file)))
     {
+        num_of_beaches++;
         fscanf (file, "%d", &b_num);
         fscanf (file, "%d", &num_samples);
         total_samples = 0;
         average = 0;
 
-        for (int i=0; i<=num_samples; i++)
+        for (int i=1; i<=num_samples; i++)
         {
             fscanf (file, "%d", &num_orgs_per_100);
             total_samples = total_samples + num_orgs_per_100;
@@ -24,13 +25,17 @@ int main()
         average = total_samples/num_samples;
 
         if (average<3500){
-            printf ("is safe to swim\n");
+            printf ("is open.\n");
+            num_open++;
         }
         else {
-            printf ("is not safe to swim\n");
+            printf ("is closed.\n");
+            num_closed++;
         }
         
     }
+
+    printf ("The number of beaches is %d\nThe number of opened beaches is %d\nThe number of closed beaches is %d",num_of_beaches, num_open, num_closed);
 
     return 0;
 }
