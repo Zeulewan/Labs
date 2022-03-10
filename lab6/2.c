@@ -4,7 +4,8 @@ double absolute(double a){
     
     if (a<0)
         a = a*(-1);
-
+    printf ("\nAbsolute value is %.2lf", a);
+      
     return(a);
 }
 
@@ -12,10 +13,8 @@ double absolute(double a){
 int main()  
 {  
     double b;
+    printf ("Enter number ");
     scanf ("%lf",&b);
-    double c;
-    c = absolute(b);  
-    printf("%lf",c);
-
+    absolute(b);  
     return 0;  
 }  
