@@ -26,7 +26,7 @@ int f1(int y){
         y = y-10;
         x++;
     }
-
+    
     return (x);
 }
 
