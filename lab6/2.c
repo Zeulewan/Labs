@@ -4,7 +4,7 @@ int fact(int y){
   
     int x, fact=1;
 
-    for(x=1; x<y; x++){
+    for(x=1; x<=y; x++){
         fact = fact*x; 
     }
     return (fact);
