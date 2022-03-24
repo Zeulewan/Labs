@@ -2,9 +2,9 @@
 
 int main(){
 
-    double max, min;
-    printf ("enter max and min\n");
-    scanf ("%lf %lf", &max, &min);
+   // double max, min;
+  //  printf ("enter max and min\n");
+  //  scanf ("%lf %lf", &max, &min);
 
 
     FILE *file;
@@ -18,10 +18,10 @@ int main(){
         x_arr[i] = j;
         i++;
     }
- //   printf("\nx_arr:\n");
- //   for(int k=0; k<i; k++) {
- //       printf("%d ", (int)x_arr[k]);
- //   }
+    printf("\nx_arr:\n");
+    for(int k=0; k<i; k++) {
+        printf("%d ", (int)x_arr[k]);
+    }
  
     double xhigh=0;
     for (int l=0; l<=24; l++){
@@ -29,19 +29,19 @@ int main(){
         if (xhigh<x_arr[l]){
             xhigh = x_arr[l];
         }
-    }
+    }   printf ("high %d", xhigh );
 
     double xlow=100;
-    for (int l=0; l<=24; l++){
-        if (x_arr[l]<xlow){
-            xlow = x_arr[l];
+    for (int e=0; e<=24; e++){
+        if (x_arr[e]<xlow){
+            xlow = x_arr[e];
         }
-    }
-    
+    }printf ("low %d", xlow );
+    /*
     double norm_x_arr[25];
     int n = 0;
-    while (n<=24){
-        norm_x_arr[n] = min + ((n - xlow)*(max - min))/(xhigh-xlow);
+    while (n<25){
+        norm_x_arr[n] = min + ((x_arr[n] - xlow)*(max - min))/(xhigh-xlow);
         n++;
     }
 
@@ -51,7 +51,7 @@ int main(){
         printf("%.0lf \n", norm_x_arr[k]);
     }
     
-
+*/
 
     /*
     fclose(file);
@@ -70,8 +70,9 @@ int main(){
     for(int m=0; m<25; m++) {
         printf("%d ", (int)x_second_arr[m]);
     }
+    */
     fclose(file);   
-*/
+
 
 
     return 0;
