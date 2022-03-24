@@ -2,16 +2,16 @@
 
 int main(){
 
-   // double max, min;
-  //  printf ("enter max and min\n");
-  //  scanf ("%lf %lf", &max, &min);
+    double max, min;
+    printf ("enter max then min\n");
+    scanf ("%lf %lf", &max, &min);
 
 
     FILE *file;
     file = fopen ("data.txt", "r");
 
     double x_arr[25];
-    int i=0, j=0, l=0, m=0;
+    int i=0, j=0;
 
     while (!(feof (file))){
         fscanf (file, "%d", &j);
@@ -29,19 +29,23 @@ int main(){
         if (xhigh<x_arr[l]){
             xhigh = x_arr[l];
         }
-    }   printf ("high %d", xhigh );
+    }   
+    printf ("high %lf", xhigh );
 
     double xlow=100;
     for (int e=0; e<=24; e++){
         if (x_arr[e]<xlow){
             xlow = x_arr[e];
         }
-    }printf ("low %d", xlow );
-    /*
+    }
+    printf ("low %lf", xlow );
+    
     double norm_x_arr[25];
+    double w;
     int n = 0;
     while (n<25){
-        norm_x_arr[n] = min + ((x_arr[n] - xlow)*(max - min))/(xhigh-xlow);
+        w = (min+1 + ((x_arr[n] - xlow)*(max - min))/(xhigh-xlow))-1;
+        norm_x_arr[n] = w;
         n++;
     }
 
@@ -51,26 +55,6 @@ int main(){
         printf("%.0lf \n", norm_x_arr[k]);
     }
     
-*/
-
-    /*
-    fclose(file);
-    file = fopen ("data.txt", "r");
-    
-    double x_second_arr[25];
-    j=0, 
-    i=0;
-    while (!(feof(file))){
-        fscanf (file, "%d", &j);
-        x_second_arr[i] = (3*j);
-        i++;
-    }
-
-    printf("\nx_second_arr:\n");
-    for(int m=0; m<25; m++) {
-        printf("%d ", (int)x_second_arr[m]);
-    }
-    */
     fclose(file);   
 
 
