@@ -42,6 +42,6 @@ int main()
 
     printf ("\nThe number of beaches is %d\nThe number of opened beaches is %d\nThe number of closed beaches is %d",num_of_beaches, num_open, num_closed);
     printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-
+    //fclose(file);   
     return 0;
 }
